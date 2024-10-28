@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Print Tiktok Order Summary",
+  "version": "1.2",
+  "description": "Prints all open tabs and closes them after printing, with specific hex code replacements.",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
